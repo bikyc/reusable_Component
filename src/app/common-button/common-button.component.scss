@@ -1,0 +1,49 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  
+    &.default {
+      background-color: #4caf50;
+      color: white;
+  
+      &:hover {
+        background-color: darken(#4caf50, 10%);
+      }
+    }
+  
+    &.danger {
+      background-color: #f44336;
+      color: white;
+  
+      &:hover {
+        background-color: darken(#f44336, 10%);
+      }
+    }
+  
+    &.success {
+      background-color: #2e7d32;
+      color: white;
+  
+      &:hover {
+        background-color: darken(#2e7d32, 10%);
+      }
+    }
+  
+    &.warning {
+      background-color: #ff9800;
+      color: white;
+  
+      &:hover {
+        background-color: darken(#ff9800, 10%);
+      }
+    }
+  
+    .icon {
+      margin-right: 0.5rem;
+    }
+  }
