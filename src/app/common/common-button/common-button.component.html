@@ -6,11 +6,12 @@
 <button> X</button> -->
 <button
   class="btn"
-  [ngClass]="{ 'default': variant === 'default', 'danger': variant === 'danger', 'success': variant === 'success', 'warning': variant === 'warning' }"
+  [ngClass]="{ 'default': variant === 'default', 'danger': variant === 'danger', 'discard': variant === 'danger', 'success': variant === 'success', 'warning': variant === 'warning' }"
   (click)="onClick.emit()"
 >
   <fa-icon *ngIf="buttonType === 'add'" [icon]="faPlus" class="icon"></fa-icon>
   <fa-icon *ngIf="buttonType === 'delete'" [icon]="faTimes" class="icon"></fa-icon>
+  <fa-icon *ngIf="buttonType === 'discard'" [icon]="faTimes" class="icon"></fa-icon>
   <fa-icon *ngIf="buttonType === 'update'" [icon]="faEdit" class="icon"></fa-icon>
   <fa-icon *ngIf="buttonType === 'save'" [icon]="faSave" class="icon"></fa-icon>
   <fa-icon *ngIf="buttonType === 'close'" [icon]="faClose" class="icon"></fa-icon>
